@@ -1,0 +1,87 @@
+{
+  "assembly":
+    {
+    "name": "hg38",
+    "aliases": ["GRCh38"],
+    "sequence": {
+      "type": "ReferenceSequenceTrack",
+      "trackId": "hg38_config",
+      "adapter": {
+        "type": "BgzipFastaAdapter",
+        "fastaLocation": {
+          "uri": "https://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/fasta/GRCh38.fa.gz",
+          "locationType": "UriLocation"
+        },
+        "faiLocation": {
+          "uri": "https://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/fasta/GRCh38.fa.gz.fai",
+          "locationType": "UriLocation"
+        },
+        "gziLocation": {
+          "uri": "https://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/fasta/GRCh38.fa.gz.gzi",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    "refNameAliases": {
+      "adapter": {
+        "type": "RefNameAliasAdapter",
+        "location": {
+          "uri": "http://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/GRCh38.aliases.txt",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    "cytobands": {
+      "adapter": {
+        "type": "CytobandAdapter",
+        "cytobandLocation": {
+          "uri": "https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Images/Tracks/cytoBand.txt"
+        }
+      }
+    }
+  },
+  "tracks": [
+      {
+          "type": "FeatureTrack",
+          "trackId": "GCA_000001405.15_GRCh38_full_analysis_set.refseq_annotation.sorted.gff",
+          "name": "NCBI RefSeq Genes",
+          "assemblyNames": ["hg38"],
+          "category": ["Genes"],
+          "adapter": {
+                 "type": "Gff3TabixAdapter",
+                 "gffGzLocation": {
+                   "uri": "https://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/ncbi_refseq/GCA_000001405.15_GRCh38_full_analysis_set.refseq_annotation.sorted.gff.gz",
+                   "locationType": "UriLocation"
+                   },
+                 "index":{
+                     "location": {
+                     "uri": "https://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/ncbi_refseq/GCA_000001405.15_GRCh38_full_analysis_set.refseq_annotation.sorted.gff.gz.tbi",
+                     "locationType": "UriLocation"
+                     }
+                 }
+            }
+      },
+      {
+          "trackId": "sgRNA_alignments_track",
+          "name": "pre-designed sgRNA",
+          "assemblyNames": ["hg38"],
+          "type": "FeatureTrack",
+          "category": ["sgRNAs"],
+          "adapter": {
+              "type": "BigBedAdapter",
+              "bigBedLocation": {
+                  "uri": "https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Images/Tracks/G3BP1_gRNA.sorted.bb"
+              }
+          },
+          "displays": [
+                  {
+                    "type": "LinearBasicDisplay",
+                    "displayId": "mytrack-LinearBasicDisplay",
+                    "renderer": {
+                      "color1": "jexl:get(feature,'reserved')=='0,0,0'?'green':'yellow'"
+                    }
+                  }
+                ]
+    }
+    ]
+}
