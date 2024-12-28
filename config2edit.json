@@ -1,4 +1,12 @@
 {
+  "plugins": [
+    {
+      "name": "MyJbPlugin",
+      "esmUrl": {
+        "uri": "https://github.com/KatsutomoNAIST/JbrowseSetup/n"
+      }
+    }
+  ],
   "assembly":
     {
     "name": "hg38",
