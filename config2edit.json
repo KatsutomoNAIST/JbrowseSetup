@@ -3,7 +3,7 @@
     {
       "name": "MyJbPlugin",
       "esmUrl": {
-        "uri": "https://github.com/KatsutomoNAIST/JbrowseSetup/n"
+        "uri": "https://github.com/KatsutomoNAIST/JbrowseSetup.git/jb_plugin.js"
       }
     }
   ],
