@@ -86,7 +86,7 @@
                     "type": "LinearBasicDisplay",
                     "displayId": "mytrack-LinearBasicDisplay",
                     "renderer": {
-                      "color1": "jexl:get(feature,'reserved')=='0,0,0'?'green':'yellow'"
+                      "color1": "jexl:colorFeature(feature)"
                     }
                   }
                 ]
