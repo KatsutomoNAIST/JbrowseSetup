@@ -17,9 +17,10 @@ cd ~/Documents/JBrowse
 nvm install 22
 ```
 <br/>
-3. Check if Jbrowse is
+3. Install jbrowse and check if Jbrowse is
 
 ```
+npm install -g @jbrowse/cli
 jbrowse --help
 ```
 This should give JBrowse2 instructions
