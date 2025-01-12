@@ -4,6 +4,9 @@ JBrowseR may be simpler, consider it first if possible
 <br/>
 1. Create a folder and change the working directory to it. Place the index.html file in it. 
 ```
+# install nvm first
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+# make JBrowse directory
 mkdir ~/Documents/JBrowse
 cd ~/Documents/JBrowse
 ```
