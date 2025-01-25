@@ -55,13 +55,18 @@ jbrowse add-assembly https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Im
  --skipCheck   
 ```
 <br/>
-8. Add mouse tracks
+8. Add mouse and human tracks
 
 ```
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Images/Tracks/gencode.vM36.annotation.sorted.gff3.gz --name "Gencode M36 Genes" --category "Genes" --config '{"renderer": {"type": "SvgFeatureRenderer"}}' --assemblyNames "mm39" --skipCheck
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/AlphaFold/mmu_AlphaFold_score.bb --name "AF2 pLDDT score" --assemblyNames "mm39" --skipCheck
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/mmu_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "mm39" --skipCheck
 ```
+```
+jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/AlphaFold/hsa_AlphaFold_score.bb --name "AF2 pLDDT score" --assemblyNames "hg38" --skipCheck
+jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/hsa_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "hg38" --skipCheck
+```
+
 <br/>
 9. Configure your Jbrowse window. config.json may not be accessible if a web browser is used. I added configuration codes in index.html directly.
 <br/>
