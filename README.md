@@ -63,8 +63,8 @@ jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/track
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/mmu_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "mm39" --skipCheck
 ```
 ```
-jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/AlphaFold/hsa_AlphaFold_score.bb --name "AF2 pLDDT score" --assemblyNames "hg38" --skipCheck
-jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/hsa_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "hg38" --skipCheck
+jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/AlphaFold/hsa_AlphaFold_score.bb --name "AF2 pLDDT score" --assemblyNames "GRCh38" --skipCheck
+jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/hsa_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "GRCh38" --skipCheck
 ```
 
 <br/>
