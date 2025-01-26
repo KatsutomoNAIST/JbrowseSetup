@@ -81,7 +81,10 @@ jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/track
 10. Then start the server. You need config.json file in the same folder if the configuration is there.
 
 ```
-npx serve 
+#mouse JBrowse in ~/Documents/JBrowse
+npx serve -p 3000
+#human JBrowse in ~/Documents/JBrowseHuman
+npx serve -p 5371
 ```
 <br/>
 11. Use the IP address:port for accessing JBrowse. The Shiny R code can be
@@ -98,7 +101,7 @@ ui <- fluidPage(
     mainPanel(
       # Use an iframe to embed JBrowse
       tags$iframe(
-        src = "http://localhost:3000/?loc=chr1:4,559,545..4,568,726"
+        src = "http://localhost:3000/?loc=chr1:4,559,545..4,568,726" #For Human, use port 5371
       )
     )
   )
