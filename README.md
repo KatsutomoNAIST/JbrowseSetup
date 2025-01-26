@@ -66,6 +66,7 @@ jbrowse add-assembly https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Im
 
 ```
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Images/Tracks/gencode.vM36.annotation.sorted.gff3.gz --name "Gencode M36 Genes" --category "Genes" --config '{"renderer": {"type": "SvgFeatureRenderer"}}' --assemblyNames "mm39" --skipCheck
+jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/Tracks/mouse/GCF_000001635.27_GRCm39_RefSeqSelect.sorted.gff.gz --name "GRCm39_RefSeqSelect" --category "Genes" --config '{"renderer": {"type": "SvgFeatureRenderer"}}' --assemblyNames "mm39" --skipCheck
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/AlphaFold/mmu_AlphaFold_score.bb --name "AF2 pLDDT score" --assemblyNames "mm39" --skipCheck
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/mmu_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "mm39" --skipCheck
 ```
