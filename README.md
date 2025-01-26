@@ -21,6 +21,13 @@ nvm install 22
 npm install -g @jbrowse/cli
 jbrowse --help
 ```
+If NVM and JBrowse are already installed, run this to activate JBrowse instead of 2-3
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+npx @jbrowse/cli
+jbrowse --help
+```
 This should give JBrowse2 instructions
 <br/>
 4. `npx serve` should start hosting, but before starting the server, prepare the contents
