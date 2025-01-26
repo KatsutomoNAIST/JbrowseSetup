@@ -72,6 +72,7 @@ jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/track
 ```
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/AlphaFold/hsa_AlphaFold_score.bb --name "AF2 pLDDT score" --assemblyNames "GRCh38" --skipCheck
 jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/gRNA/hsa_gRNA_TOP3.bb --name "pre-designed sgRNA" --assemblyNames "GRCh38" --skipCheck
+jbrowse add-track https://data.cyverse.org/dav-anon/iplant/home/okamuralab/trackhub/YumaHanai/Tracks/human/MANE.GRCh38.v1.0.refseq_genomic.sorted.gff.gz --name "MANE RefSeq Genes" --category "Genes" --config '{"renderer": {"type": "SvgFeatureRenderer"}}' --skipCheck
 ```
 
 <br/>
