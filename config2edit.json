@@ -1,10 +1,8 @@
 {
   "plugins": [
     {
-      "name": "MyJbPlugin",
-      "esmUrl": {
-        "uri": "https://raw.githubusercontent.com/KatsutomoNAIST/JbrowseSetup/70ca7b1b6c8bedcc864bf9fb23b4c86f9d072e81/jb_plugin.js"
-      }
+      "name": "MyPlugin",
+      "umdUrl": "https://data.cyverse.org/dav-anon/iplant/home/okamuralab/Images/Tracks/umdMyplugin.js"
     }
   ],
   "assembly":
@@ -86,7 +84,7 @@
                     "type": "LinearBasicDisplay",
                     "displayId": "mytrack-LinearBasicDisplay",
                     "renderer": {
-                      "color1": "jexl:colorFeature(feature)"
+                      "color1": "jexl:customBedColor(feature)"
                     }
                   }
                 ]
